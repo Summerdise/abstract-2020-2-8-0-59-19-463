@@ -1,6 +1,6 @@
 package com;
 
-public class Direction {
+public class Direction implements ChangeDirection {
   private final char direction;
 
   public Direction(char direction) {

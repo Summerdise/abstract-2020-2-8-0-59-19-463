@@ -1,15 +1,17 @@
 package com;
 
-public class SDirection extends Direction implements ChangeDirection{
+public class SDirection extends Direction {
     public SDirection(char direction) {
         super(direction);
     }
+
     @Override
-    public Direction turnLeft(){
+    public Direction turnLeft() {
         return new EDirection('E');
     }
+
     @Override
-    public Direction turnRight(){
+    public Direction turnRight() {
         return new WDirection('W');
     }
 }
